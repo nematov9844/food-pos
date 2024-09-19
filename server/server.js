@@ -1,14 +1,11 @@
-const baseUrl = "https://food-pos-data.vercel.app"
-
+const baseUrl = "https://food-pos-data.vercel.app";
+// const baseUrl = "http://localhost:3000";
 
 export async function getData(path) {
-    if(path){
-        try {
-            const res = await fetch(`${baseUrl}/${path}`)
-            const data = await res.json()
-        return data
-        } catch (error) {
-            console.log(error);
-        }
-    }
+  if (path) {
+    const data = await fetch(`${baseUrl}/${path}`)
+      .then((res) => res.json())
+      .then((data) => data);
+    return data;
+  }
 }

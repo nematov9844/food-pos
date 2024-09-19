@@ -93,9 +93,20 @@
                 <div class="product grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"></div>
             </div>
         </div>
-        <div class="drower w-[30%] fixed h-screen text-white top-0 right-0 transition-all duration-500 ease-in-out transform translate-x-full">
+        <div class="drower w-[30%] fixed h-screen text-white top-0 right-0 transition-all duration-500 ease-in-out transform translate-x-full ">
                 <button class="drowerBtn absolute top-2 -left-[50px] bg-red-400 px-3 py-1 rounded-md text-3xl text-white"><i class="fa-solid fa-angle-left"></i></button>
-                <div class="localCards"></div>
+                
+                <div class="overflow-scroll h-screen bg-[#1c1c24] p-6 rounded-xl max-w-md mx-auto  absolute top-0 right-0">
+                    <div class="text-white text-lg font-semibold mb-4">
+                        Orders #34562
+                      </div>
+                      <div class="flex space-x-2 mb-4">
+                        <button class="bg-[#ff6e5e] text-white py-2 px-4 rounded-lg">Dine In</button>
+                        <button class="text-white py-2 px-4 rounded-lg border border-gray-600">To Go</button>
+                        <button class="text-white py-2 px-4 rounded-lg border border-gray-600">Delivery</button>
+                      </div>
+                    <div class="localCards"></div>
+                </div>
         </div>
     </section>
     <script type="module" src="./server/app.js"></script>
