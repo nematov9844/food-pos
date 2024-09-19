@@ -1,6 +1,7 @@
 const elCatolog = document.querySelector(".catolog");
 const elProduct = document.querySelector(".product");
 const drowerBtn = document.querySelector(".drowerBtn")
+const elSearch = document.querySelector(".search")
 import { getData } from "./server.js";
 
 getData("catalog").then((data) => {
